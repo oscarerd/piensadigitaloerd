@@ -1,0 +1,20 @@
+/*Selectores de presencia y valor*/
+/* todos los elementos con  "data-vegetable"
+su texto es verde */
+[data-vegetable] {
+  color: green;
+}
+
+/*todos los elementos con "data-vegetable"
+  y un valor exacto a  "liquid" tendran un fondo dorado */
+[data-vegetable="liquid"] {
+  background-color: goldenrod;
+}
+
+/* todos los elementos con "data-vegetable",
+   contengan el valor "spicy", sin importar otros,
+   tendra el  color rojo  */
+
+[data-vegetable~="spicy"] {
+  color: red;
+}

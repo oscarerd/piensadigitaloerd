@@ -1,0 +1,116 @@
+/*
+Pràctica No. 2
+*/
+#p40{
+  font-size: 40px;
+}
+
+#psmall{
+  font-size: small;
+}
+
+#pmedium{
+  font-size: medium;
+}
+
+#plarge{
+  font-size: large;
+}
+
+#pxxlarge{
+  font-size: xx-large;
+}
+
+#pxxsmall{
+  font-size: xx-small;
+}
+
+#p2p{
+  font-size: 2%;
+}
+
+#p20p{
+  font-size: 20%;
+}
+
+#p80p{
+  font-size: 80%;
+}
+
+#p200p{
+  font-size: 200%;
+}
+
+#p300p{
+  font-size: 300%;
+}
+
+/*
+Pràctica No. 3
+*/
+#hr1{
+  height: 5px;
+  width: 50%;
+}
+
+#hr2{
+  size: 25;
+  width: 50;
+}
+
+#hr3{
+  width: 75%;
+  height: 10px;
+  background-color: rgb(0,0,255);
+  margin-left:0pt;
+}
+
+#hr4{
+  border-width: 10px;
+  width: 60%;
+  height: 50px;
+  border-color: rgb(0,255,0);
+  background-color: rgb(255,0,0);
+  margin-right: :0pt;
+}
+
+/*
+Pràctica No. 4
+*/
+
+#body4{
+  background-color: lightgrey;
+}
+
+#negro{
+  color: black; font-weight: bold; font-size: xx-large
+}
+
+#blanco{
+  color: white; font-weight: bold; font-size: xx-large
+
+}
+
+#rojo{
+  color: red; font-weight: bold; font-size: xx-large
+}
+
+#verde{
+  color: lime; font-weight: bold; font-size: xx-large
+
+}
+
+#azul{
+  color: blue; font-weight: bold; font-size: xx-large
+
+}
+
+#amarillo {
+  color: yellow; font-weight: bold; font-size: xx-large
+
+}
+
+#morado {
+  color: fuchsia; font-weight: bold; font-size: xx-large
+
+}

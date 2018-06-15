@@ -1,0 +1,20 @@
+/*Pseudo-clases*/
+a {
+  color: blue;
+  font-weight: bold;
+}
+
+
+/* color cuando se ha visitado los links */
+a:visited {
+  color: navy;
+}
+
+
+/* Cuando se pasa el mouse o cuando esta activo */
+a:hover,
+a:active,
+a:focus {
+  color: darkred;
+  text-decoration: line-through;
+}
