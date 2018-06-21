@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="javascript\Session8.js"></script>
+  <title>Javascript 2 - Sesión 8</title>
+</head>
+<body>
+  <p id="pPersona"> JavaScript  </p>
+  <p id="idIndefinido">Las variables se pueden vaciar si establece el valor en INDEFINIDO</p>
+  <p id="pNulo"> El objeto Párrafo es nulo  </p>
+  <input type="text" id="sumar1" name="sumar1" value=""> +
+  <input type="text" id="sumar2" name="sumar2" value="">
+  <button type="button" name="button" onclick="sumar()">Sumar</button>
+  <span id="Resultado"></span>
+  <div style="text-align:center;">
+    <table>
+      <th colspan="4">CALCULADORA</th>
+      <tr>
+        <td colspan="4"><input type="text" name="entrada" value=""></td>
+        <input type="hidden" name="num1" id="num1" value="">
+        <input type="hidden" name="num2" id="num2" value="">
+      </tr>
+      <tr>
+        <td><button type="button" name="button7" onclick="operacionessMatematicas.actualizar(7)">7</button></td>
+        <td><button type="button" name="button8">8</button></td>
+        <td><button type="button" name="button9">9</button></td>
+        <td><button type="button" name="buttonmas">+</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="button4">4</button></td>
+        <td><button type="button" name="button5">5</button></td>
+        <td><button type="button" name="button6">6</button></td>
+        <td><button type="button" name="buttonmenos">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="button3">3</button></td>
+        <td><button type="button" name="button2">2</button></td>
+        <td><button type="button" name="button1">1</button></td>
+        <td><button type="button" name="buttonmulti">*</button></td>
+      </tr>
+      <tr>
+        <td colspan="3"><button style="width:120px;" type="button" name="buttonigual">=</button></td>
+        <td><button type="button" name="buttondiv">/</button></td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script>
+  var persona = {
+    nombre : "Jose",
+    apellido  : "Ramirez",
+    edad       : 50,
+    colorPreferido  : "azul"
+  };
+  document.getElementById("pPersona").innerHTML = persona.nombre + " tiene " + persona.edad + " años.";
+  var persona2 = {
+    nombre : "Jose",
+    apellido  : "Ramirez",
+    edad       : 50,
+    colorPreferido  : "azul"
+  };
+   persona3= undefined;
+   document.getElementById("idIndefinido").innerHTML = persona + "<br>" + typeof + persona2;
+   var persona3 = {
+     nombre : "Jose",
+     apellido  : "Ramirez",
+     edad       : 50,
+     colorPreferido  : "azul"
+   };
+  persona3= null;
+  document.getElementById("pNulo").innerHTML = persona + "<br>" + typeof + persona2;
+
+  function sumar()
+  {
+    var sumar1 = 0;
+    var sumar2 = 0;
+    sumar1 = parseInt(document.getElementById("sumar1").value);
+    sumar2 = parseInt(document.getElementById("sumar2").value);
+
+    var resultado = sumar1 + sumar2;
+
+    document.getElementById("Resultado").innerHTML = "Resultado Suma: " + resultado;
+  }
+</script>
+</html>
