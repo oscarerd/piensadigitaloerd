@@ -1,0 +1,17 @@
+<h1>Nuevo Artículo</h1>
+
+<%= form_with scope: :articulo, url: articulos_path,local: true do |form| %>
+    <p>
+        <%= form.label :Título, class: 'LabelTitulo' %> <br>
+        <%= form.text_field :title %>
+    </p>
+
+    <p>
+        <%= form.label :Texto, class: 'LabelTitulo' %><br>
+        <%= form.text_area :text %>
+    </p>
+
+    <p>
+        <%= form.submit "Guardar Artículo", class: 'guardar' %>
+    </p>
+<% end %>
