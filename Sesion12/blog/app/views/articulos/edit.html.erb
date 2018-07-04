@@ -1,0 +1,37 @@
+<h1>Editar Artículo</h1>
+
+<%= form_with(model: @articulo, local: true) do |form| %>
+
+    <% if @articulo.errors.any? %>
+        <div id="error">
+            <h2>
+                <%= pluralize(@articulo.errors.count, "error") %>
+                Paila, este artículo tiene
+            </h2>
+
+            <ul>
+                <% @articulo.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+
+        </div>
+
+    <% end %>
+
+
+    <p>
+        <%= form.label :Título, class: 'LabelTitulo' %> <br>
+        <%= form.text_field :title %>
+    </p>
+
+    <p>
+        <%= form.label :Texto, class: 'LabelTitulo' %><br>
+        <%= form.text_area :text %>
+    </p>
+
+    <p>
+        <%= form.submit "Actualizar Artículo", class: 'guardar' %>
+    </p>
+<% end %>
+<%= link_to "Volver", articulos_path %>

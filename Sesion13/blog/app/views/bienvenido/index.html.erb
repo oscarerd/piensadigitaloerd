@@ -1,0 +1,15 @@
+<h1>Bienvenido</h1>
+<p>Hola mundo de ruby on rails MVC</p>
+
+
+
+<p class="navbar-text pull-right">
+<% if user_signed_in? %>
+    Ingresado con el e-mail <strong><%= current_user.email %></strong>. <br> <br>
+    <%= link_to "Ir a artículos", controller: 'articulos' %>
+<% else %>
+    <%= link_to "Regístrate", new_user_registration_path, :class => 'navbar-link' %>
+    <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link' %>
+<% end %>
+</p>
+<p id="notice"><%= notice %></p>
