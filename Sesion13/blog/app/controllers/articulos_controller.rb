@@ -1,4 +1,5 @@
 class ArticulosController < ApplicationController
+    #layout "articulos"
     def index
         @articulos = Articulo.all
     end
@@ -28,11 +29,16 @@ class ArticulosController < ApplicationController
     end
 
     def edit
-        @articulo = Articulo.find(params[:id])
+        session[:articuloID] = params[:id]
+        @articulo = Articulo.find(session[:articuloID])
+        #@articulo = Articulo.find(params[:id])
+        puts "ID del articulo en la sesión: #{session[:articuloID]}"
     end
 
     def update
-        @articulo = Articulo.find(params[:id])
+        #@articulo = Articulo.find(params[:id])
+        @articulo = Articulo.find(session[:articuloID])
+        session.delete(:articuloID)
 
         if @articulo.update(articulo_params)
             redirect_to @articulo
