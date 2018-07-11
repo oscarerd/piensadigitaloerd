@@ -1,0 +1,70 @@
+// Place all the styles related to the articulos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+
+/* ARTICULOS INDEX */
+a:hover {
+    color: mediumvioletred;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+table {
+    background-color: #DDD;
+    border-style: solid;
+    border: 1;
+}
+
+td {
+    text-align: left;    
+    border-style: solid;
+    border: 1;
+    margin: 10px 10px 5px 5px;
+    padding: 10px 30px 5px 5px;
+}
+
+th {
+    font-size: x-large;
+}
+
+#cellLeft {
+    text-align: left;
+}
+
+#cell3 {
+    text-align: center;
+}
+
+/* ARTICULOS INDEX */
+textarea  {
+    height: 8em;
+    width: 50em;
+}
+
+input[type="text"] 
+{
+    width: 50em;
+}
+
+.LabelTitulo{
+    font-weight: bold;
+    color: chocolate;
+}
+
+.guardar {
+    border-radius: 6px;    
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
+}
