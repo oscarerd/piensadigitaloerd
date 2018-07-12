@@ -1,0 +1,18 @@
+Instrucciones de instalación:
+	https://www.admfactory.com/how-to-install-openssh-on-windows/
+
+Descargar y ejecutar como Admnistrador el instalador: 
+	https://www.mls-software.com/files/setupssh-7.4p1-1.exe
+
+
+Abrir consola powershell como administrador
+
+usuario de conexión: curso1
+comando para conectar con servidor:
+	ssh -p 22 curso1@'dirección ip de un equipo en la red' 
+Ejemplos:
+	ssh -p 22 curso1@192.168.0.35
+	ssh -p 22 curso1@192.168.0.33
+
+password: curso1
+
