@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Oscar Rodrìguez</ion-title>
+    <ion-buttons start>
+      <button ion-button menu-toggle="leftMenu">
+        <ion-icon name="name"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button menu-toggle="rightMenu">
+        <ion-icon name="name"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="getting-started">
+  <h3>Doble Menú</h3>
+
+  <p>
+    Menú desplegable desde ambos costados 
+  </p>
+
+  <ion-row>
+      <ion-col width-50>
+          <button ion-button primary block menuToggle="leftMenu"> << Menu </button>
+      </ion-col>
+      <ion-col width-50>
+        <button ion-button primary block menuToggle="rightMenu"> Menu >> </button>
+      </ion-col>
+  </ion-row>
+
+  <button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <button ion-button (click)="abrirActionSheet()" class="button">Abrir Action Sheet</button>
+<p>
+  <span>Ejercicio Botones</span>
+    <button ion-button color="light">Light</button>
+    <button ion-button>Default</button>
+    <button ion-button color="secondary">Secundario</button>
+    <button ion-button color="danger">Peligro</button>
+    <button ion-button color="dark">Oscuro</button>
+</p>
+<p>
+    <span>Ejercicio listas</span>
+    <ion-list>
+      <ion-item>
+        Elemento No. 1
+      </ion-item>
+      <ion-item>
+        Elemento No. 2
+      </ion-item>
+      <ion-item>
+        Elemento No. 3
+      </ion-item>
+    </ion-list>
+</p>
+<p>
+  <span>Abrir Alerta</span><br>
+  <button ion-button (click)="mostrarAlerta()" class="button">Mostrar Alerta</button>
+</p>
+
+<p>
+  <span>
+    SLIDE
+  </span>
+  <ion-slides pager  style="height: 200px;">
+      <ion-slide style="background-color: aqua">
+          <h2>Slide 1</h2>
+      </ion-slide>
+        
+      <ion-slide style="background-color:chocolate; ">
+          <h2>Slide 2</h2>
+        </ion-slide>
+          
+        <ion-slide style="background-color: goldenrod; ">
+          <h3>Slide 3</h3>
+        </ion-slide>
+          
+  </ion-slides>
+</p>
+
+</ion-content>

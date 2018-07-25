@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Observador Usuario
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content [ngStyle]="{ backgroundColor: color}">
+  <h2>{{ mensaje | uppercase }}</h2>
+  <button ion-button (click)="obtenerUsuarios()" class="button">Ítem</button>
+    <h2>{{ username | uppercase }}</h2>
+
+    <button ion-button (click)="set('color','blue')">Cambiar color por Azul</button>
+    <button ion-button (click)="remove('color')">Quitar el color</button>
+    <button ion-button (click)="mostrarColor()">Mostrar Color</button>
+    <h2>{{ color | uppercase }}</h2>
+</ion-content>

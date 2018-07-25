@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi primer blog en Ruby on Rails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<body>
+    <p>ESTE ES EL LAYOUT PARA ARTICULOS</p>
+      <%= yield %>
+    <footer>
+    <p style="float:right;">Desarrollado por Oscar Rodríguez Dimaté</p>
+    </footer>
+</body>
+</html>

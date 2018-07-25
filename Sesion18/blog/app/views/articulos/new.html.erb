@@ -1,0 +1,12 @@
+<h1>Nuevo Artículo</h1>
+
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<% if flash[:error] %>
+    <div class="error"><%= flash[:error] %></div>
+<% end %>
+
+<%= render 'form' %>
+
+<%= link_to "Volver", articulos_path %>
